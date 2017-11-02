@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- Ahoj člověče, díky že zkoumáš můj kód, rád bych tě předem poprosil, aby jsi NIC z kódu nepoužíval pro komerční účely. Mám pro to jeden jediný důvod,
+    vše je vázané na sebe a nerad bych, aby jsi se rozčiloval nad "neuniverzálností" nebo nad nějakými "personal free" věcmi.
+    Pokud máš ovšem dostatečně pevné nervy, klidně si vem co chceš. A nejlépe uděláš, pokud též do kódu napíšeš nějaké
+    poznámky od koho jaké části jsou. Já to též udělal ;) 
+
+                Pozn. některé části jsou na tolik upravené, že je zbytečné úvádět zdroj, to platí pro tebe taky. Pokud použiješ pouze pár věcí
+                a prakticky nikdo nepozná že je máš ode mě, též si nelam hlavu s tím, mě uvádět do kódu ;) 
+
+
+        Použité programy:
+
+            http://www.nedivse.cz/doplnovani-pevnych-mezer/index.php
+            http://brackets.io/
+            https://www.vlastimilburian.cz/?pg=1&pid=4
+            https://filezilla-project.org/
+
+        Použité knihovny:
+            
+            typed.js
+            jquerry
+            bootstrap
+            font-awesome
+            jquerry easing
+            smoothscroll
+            popper.js
+
+        Použité externí fonty:
+
+            Quicksand
+
+                Pozn. pokud v css najdeš nějaký jiný font (externí) je možné že tam zůstal z předešlého webu. Nepředělávám celé css a využívám již "postavených" věcí.
+
+
+
+
+(c) Ondřej Rethy 2017
+
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Jmenuji se Ondřej Rethy a pocházím ze severu čech, konrétně z města Liberec. Studuji na Střední průmyslové škole strojní a elektrotechnické, obor Informační technologie, ročník druhý. Mezi mé zájmy patří Grafika, Webové aplikace, Editace videí, VFX a další.">
+        <meta name="author" content="Ondřej Rethy">
+        <meta name="keywords" content="grafik,student,webové aplikace,editace videí,liberec">
+        <title>Rethy.cz | Web studenta PSLIBu</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <span id="page-top"></span>
+    <body class="body">
+        <center>
+            <span class="show767">Rethy.cz</span>
+        </center>
+        <nav id="navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <a class="navbar-brand hide1200" href="#page-top" data-scroll data-options='{ "easing": "easeInQuad" }' title="Zpátky na horu" style="font-size: 300%; color: white; position: fixed; top: 1%; font-weight: 500;">
+                            Rethy.cz 
+                            <span class="indexbeta" style="font-weight: 100;">
+                                BETA<span style="font-size: 50%!important; vertical-align: super;">v2.1</span>
+                            </span>
+                        </a>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#page-top">Home</a>
+                            </li>
+                            <li>
+                                <a href="#main">O mně</a>
+                            </li>
+                            <li>
+                                <a href="#timeline">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#socky">Sociální sitě</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header-hide intro">
+            <div class="main-header header-hide">
+                <div class="main-text">
+                    <h1>
+                        <b>Ondřej Rethy</b>
+                    </h1>
+                    <h2>
+                        Jsem 
+                        <b class="my-red">
+                            <span class="write"></span>
+                        </b>
+                    </h2>
+                </div>
+                <img class="main-img" src="img/logo.png" alt="Logo Ondřej Rethy">
+            </div>
+            <div>
+                <div class="main-waydown header-hide ">
+                    <div class="pulse-button material-shadow center">
+                        <a href="#main" class="waydown">
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div style="background-color: #f5f5f5; position: absolute; z-index: ">
+            <section id="main" class="sec-main text-center col-md-8">
+                <div class="sec-heading">
+                    <h2 class="head">O mně</h2>
+                    <h2 class="head-clone-links hide1200">Kdo jsem?</h2>
+                </div>
+                <div class="head-clone-up hide1200up">
+                    <p style="padding: 1% 10% 1% 10%; text-align: justify; font-size: 150%">
+                        Ahoj! Jmenuji se <b>Ondřej Rethy</b>
+                        a &nbsp;pocházím ze severu Čech, konkrétně z &nbsp;města Liberec. Studuji druhý ročník na Střední průmyslové škole strojní a &nbsp;elektrotechnické v &nbsp;Liberci, obor <b>Informační technologie</b>
+                        . Ve volné chvíli se zajímám o &nbsp;<b>grafiku, programování, webdesign, editaci videí</b>
+                        a &nbsp;další. Mezi mé úspěchy řadím účast a &nbsp;následnou úspěšnost v &nbsp;programu <b>WebRangers</b>
+                        , který se specializoval na kyberšikanu a &nbsp;bezpečnost na internetu, dále získání certifikátu <b>ECDL</b>
+                        , který garantuje především to, že na pokročilé úrovni umím ovládát aplikační software <b>MS Office</b>
+                        (Word, Excel, PowerPoint, Access, Outlook) a &nbsp;jiné nezbytné věci potřebné k &nbsp;práci s &nbsp;počítačem.
+                    </p>
+                </div>
+            </section>
+            <section id="progress" class="sec-progress col-md-4 text-center">
+                <div style="padding: 10px;">
+                    <div class="sec-heading">
+                        <h2 class="head">Mé zkušenosti</h2>
+                        <h2 class="head-clone-links hide1200">Skills!</h2>
+                    </div>
+                    <div class="head-clone-up">
+                        <h3>HTML5 a CSS</h3>
+                        <div class="progress">
+                            <div data-percentage="0%" style="width: 50%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3>Grafický design</h3>
+                        <div class="progress">
+                            <div data-percentage="0%" style="width: 25%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3>Střih videa a speciální efekty</h3>
+                        <div class="progress">
+                            <div data-percentage="0%" style="width: 20%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3>C#</h3>
+                        <div class="progress">
+                            <div data-percentage="0%" style="width: 10%;" class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="timeline" class="sec-timeline col-md-12">
+                <div class="sec-heading">
+                    <h2 class="head">Timeline</h2>
+                    <h2 class="head-clone-links hide1200">Můj život!</h2>
+                </div>
+                <hr>
+                <div class="head-clone-up hide1200up">
+                    <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Život na střední!</h4>
+                                </div>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i>
+                                        1. 9. 2016
+                                    </small>
+                                </p>
+                                <div class="timeline-body">
+                                    <p>No a teď jsem na střední. Studuji druhý ročník na Střední průmyslové škole strojní a elektrotechnické v Liberci, obor Informační technologie. Díky tomuto zásadnímu kroku v mém životě jsem rozjel svůj život na 110%.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger">
+                                <i class="glyphicon fa fa fa-code"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">První HTML web!</h4>
+                                </div>
+                                <hr>
+                                <div class="timeline-body">
+                                    <p>
+                                        Na konci sedmé třídy jsem si vyzkoušel psát vlastní weby v jazyce HTML5 a CSS. Díky tomuto okamžiku, jsem začínal pomalu opouštět Wordpress a začal jsem dělat vlastní weby s vlastní designem. Na ten se můžete podívat <a href="https://older.rethy.cz" target="_blank">ZDE</a>
+                                        .
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger">
+                                <i class="glyphicon fa fa-code-fork"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">První program a první jazyk</h4>
+                                </div>
+                                <hr>
+                                <div class="timeline-body">
+                                    <p>Přibližně v polovině šesté třídy jsem se zakoukal do programovacího jazyka Java! Již v té době jsem si dělal vlastní textové hry jako byl například komunikační bot. Tyto dovednosti jsem poté využil v sedmé třídě, kdy jsme toto probírali i v rámci klasické výuky na škole.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Další základka!</h4>
+                                </div>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i>
+                                        1. 9. 2012 - 30. 6. 2016
+                                    </small>
+                                </p>
+                                <div class="timeline-body">
+                                    <p>V tento den začal můj IT život nabírat na otáčkách. Začal jsem chodit na základní školu s rozšířenou výukou informačních technologií!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger">
+                                <i class="fa fa-wordpress"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">První web!</h4>
+                                </div>
+                                <hr>
+                                <div class="timeline-body">
+                                    <p>Někdy okolo třetí třídy jsem se seznámil s jedním skvělým nástrojem který využívám dodnes. Tím byl samozřejmě Wordpress, který jsem dříve hostoval na hostingu Endora. Hosting, díky kterému jsem s tvorbou webů začal!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Základka!</h4>
+                                </div>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i>
+                                        1. 9. 2007 - 30. 6. 2012
+                                    </small>
+                                </p>
+                                <div class="timeline-body">
+                                    <p>Den, kdy jsem poznal spoustu mých dlouholetých přátel i spolupracovníků v oboru. Den, kdy jsem začal vyvíjet svou osobnost a získávat zkušenosti.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-down">
+                            <div class="timeline-badge success">
+                                <i class="glyphicon glyphicon-thumbs-up"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Rok draka!</h4>
+                                </div>
+                                <p>
+                                    <small class="text-muted">
+                                        <i class="glyphicon glyphicon-time"></i>
+                                        13. 12. 2000
+                                    </small>
+                                </p>
+                                <div class="timeline-body">
+                                    <p>Rok 2000 je rokem, kdy se lámalo desetiletí, století i tisíciletí. Proto není divu že je to dle čínského kalendáře rok draka. No a kdy jindy bych se mohl narodit než v roce tohoto mýtického tvora!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="gray">
+                <section id="socky" class="contact sec-contact col-md-4" style="height: auto">
+                    <div class="sec-heading">
+                        <h2 class="head">
+                            Jsem i jinde! <i class="fa fa-heart"></i>
+                        </h2>
+                        <center>
+                            <h2 class="head-clone-links hide1200">Socky!</h2>
+                        </center>
+                    </div>
+                    <div class="head-clone-up hide1200up">
+                        <ul class="list-inline list-social">
+                            <li class="social-twitter">
+                                <a href="https://twitter.com/ondrarethy" target="_blank" title="Můj twitter účet">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-facebook">
+                                <a href="https://www.facebook.com/antyyofficial/" target="_blank" title="Můj facebook účet">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-google-plus">
+                                <a href="https://youtube.com/ondrarethy" target="_blank" title="Můj youtube účet">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-instagram">
+                                <a href="https://instagram.com/ondrarethyy" target="_blank" title="Můj IG účet">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-spotify">
+                                <a href="https://open.spotify.com/user/11141188608" target="_blank" title="Můj Spotify účet">
+                                    <i class="fa fa-spotify"></i>
+                                </a>
+                            </li>
+                            <!--<li class="social-discord">
+                    <a href="https://discord.gg/indian" target="_blank" title="Indian Discord"><i class="icon-discord"></i></a>
+                </li>-->
+                        </ul>
+                    </div>
+                </section>
+                <section id="links" class="sec-links col-md-8">
+                    <div style="text-align: center">
+                        <div class="sec-heading">
+                            <h2 class="head">Užitečné odkazy</h2>
+                            <h2 class="head-clone-links hide1200">Čekuj to!</h2>
+                        </div>
+                        <hr/>
+                        <div class="head-clone-up hide1200up">
+                            <div class="col-md-4">
+                                <ul class="dcontact">
+                                    <span>Kde mě najdete?</span>
+                                    <li>
+                                        <a href="https://facebook.com/ondrarethy" target="_blank">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/ondrarethyy" target="_blank">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/ondrarethy" target="_blank">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://youtube.com/ondrarethy" target="_blank">Youtube</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://open.spotify.com/user/11141188608" target="_blank">Spotify</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/indian" target="_blank">Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="dcontact">
+                                    <span>Co rád používám?</span>
+                                    <li>
+                                        <a href="https://www.spotify.com/cz/" target="_blank">Spotify</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getsharex.com/" target="_blank">ShareX</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brackets.io/" target="_blank">Brackets</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vlastimilburian.cz/?pg=1&pid=4" target="_blank">Barvy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.adobe.com/cz/creativecloud.html" target="_blank">Adobe CC</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="dcontact">
+                                    <span>Co čtu?</span>
+                                    <li>
+                                        <a href="https://indian-tv.cz/" target="_blank">Indian</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.svetandroida.cz/" target="_blank">SvětAndroida</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://mobilenet.cz/" target="_blank">Mobilenet</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://web.pslib.cz/pro-verejnost/skolni-casopis" target="_blank">Zkrat</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.theverge.com/" target="_blank">TheVerge</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12">
+                                <iframe src="https://open.spotify.com/embed/user/11141188608/playlist/3t6tr9ac0yLSo9bgYcA5c4" width="600" height="380" frameborder="0" allowtransparency="true" style="margin-top: 25px"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer class="col-md-12" style="z-index:50">
+                <div class="container">
+                    <p>
+                        Made with <b style="color: #e74c3c">❤</b>
+                        in 2017 by <span style="font-family: Arial">©</span>
+                        Ondřej Rethy 2017
+                    </p>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#soon" title="Můj git účet">Git</a>
+                        </li>
+                        <li>
+                            <a href="en/index.html" title="English version">English version</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="licence">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                    </a>
+                    <br/>
+                    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Rethy personal website"</span>
+                    , jehož autorem je <a xmlns:cc="http://creativecommons.org/ns#" href="https://rethy.cz/" property="cc:attributionName" rel="cc:attributionURL">Ondřej Rethy</a>
+                    , podléhá licenci <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 4.0 Mezinárodní </a>
+                    .<br/>
+                    Práva nad rámec této licence jsou popsána zde:  <a xmlns:cc="http://creativecommons.org/ns#" href="https://rethy.cz/cc.html" rel="cc:morePermissions">https://rethy.cz/cc.html</a>
+                    .
+        
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-71275802-2', 'auto');
+    ga('send', 'pageview');
+    
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</html>
