@@ -1,20 +1,20 @@
-Ahoj, díky ze zkoumás muj kód, rád bych te predem poprosil, aby jsi NIC z kódu nepouzíval pro komercní úcely. Mám pro to jeden jediný duvod,
-    vse je vázané na sebe a nerad bych, aby jsi se rozciloval nad "neuniverzálností" nebo nad nejakými "personal free" vecmi.
-    Pokud más ovsem dostatecne pevné nervy, klidne si vem co chces. A nejlépe udelás, pokud téz do kódu napíses nejaké
-    poznámky od koho jaké cásti jsou. Já to téz udelal ;) 
+Hi, because you are researching my code, I'd like to ask you in advance to not use the NOTHING for the commercial purposes. I have one reason for that,
+    everything is bound to yourself, and I do not want you to be upset about "non-universality" or some "personal free" stuff.
+    But if you have strong enough nerves, just keep on what you want. And you'll do the best if you write any of the code
+    comments from who they are. I did it;)
 
-                Pozn. nekteré cásti jsou na tolik upravené, ze je zbytecné úvádet zdroj, to platí pro tebe taky. Pokud pouzijes pouze pár vecí
-                a prakticky nikdo nepozná ze je más ode me, téz si nelam hlavu s tím, me uvádet do kódu ;) 
+                Note: some parts are so much modified that it is useless to source the source, that's true for you too. If you use only a few things
+                and practically nobody knows that you have them from me, I do not even worry about putting it in the code ;)
 
 
-        Pouzité programy:
+        Used programs:
 
             http://www.nedivse.cz/doplnovani-pevnych-mezer/index.php
             http://brackets.io/
             https://www.vlastimilburian.cz/?pg=1&pid=4
             https://filezilla-project.org/
 
-        Pouzité knihovny:
+        Used libraries:
             
             typed.js
             jquerry
@@ -24,11 +24,11 @@ Ahoj, díky ze zkoumás muj kód, rád bych te predem poprosil, aby jsi NIC z kódu n
             smoothscroll
             popper.js
 
-        Pouzité externí fonty:
+        Used external fonts:
 
             Quicksand
 
-                Pozn. pokud v css najdes nejaký jiný font (externí) je mozné ze tam zustal z predeslého webu. Nepredelávám celé css a vyuzívám jiz "postavených" vecí.
+                Note: if you find some other font (external) in css, it may have stayed there from the previous site. I'm not doing the whole css and I'm already using "built" things.
 
 
 
